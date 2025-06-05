@@ -1,0 +1,79 @@
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.userInfo p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(106, 35, 35);
+    font-weight: 600;
+}
+
+.userInfo p:first-child {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.captionInput {
+    width: 100%;
+    resize: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #d7ccc8;
+    background-color: #efebe9;
+    color: #3e2723;
+}
+
+.mediaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.mediaButtonLabel {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: brown;
+    font-weight: 700;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.mediaPreview {
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.mediaPreview img,
+.mediaPreview video {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d7ccc8;
+}
+
+.submitBtn {
+    margin-top: 1rem !important;
+    background-color: #793922 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 6px !important;
+    text-transform: none !important;
+}
+
+.submitBtn:hover {
+    background-color: #5e3020 !important;
+}

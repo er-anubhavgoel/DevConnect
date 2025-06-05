@@ -1,0 +1,53 @@
+.searchUserContainer {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(89, 24, 24);
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #fac8a5;
+    max-height: 3.5rem;
+    width: 15rem;
+}
+
+#searchCard:hover {
+    background-color: #f7b98f;
+    transform: scale(1.03);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #a75928;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #fceee1;
+}
+
+.searchInput::placeholder {
+    color: #160b04;
+    font-weight: 500;
+}
+
+.searchInput:focus {
+    border-color: #703104;
+    /* darker on focus */
+    box-shadow: 0 0 8px rgba(112, 49, 4, 0.4);
+}

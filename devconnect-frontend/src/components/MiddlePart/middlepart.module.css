@@ -1,0 +1,182 @@
+.middleContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fcf3eb;
+    gap: 1.5rem;
+}
+
+/* === STORIES SECTION === */
+.stories {
+    width: 95%;
+    min-height: 18vh;
+    border-radius: 12px;
+    border: 1.8px solid #8a3a04;
+    background: #8f4e23;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 1rem;
+    scrollbar-width: none;
+    scroll-padding-right: 0.5rem;
+    scroll-behavior: smooth;
+}
+
+.stories::after {
+    content: '';
+    flex: 0 0 0.5rem;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    flex: 0 0 auto;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #e2c09b;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.story:hover {
+    transform: scale(1.08);
+    color: pink;
+    /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); */
+}
+
+#avatar {
+    width: 80%;
+    height: 80%;
+    border: 2.3px solid #d9a06a;
+    background-color: #7e4b2f;
+    border-radius: 50%;
+    color: #eae4dd;
+}
+
+#add {
+    font-size: 2.8rem;
+    cursor: pointer;
+    color: #fbf1e8;
+    transition: color 0.3s ease;
+}
+
+#add:hover {
+    color: #fad6bb;
+}
+
+/* === CREATE POST SECTION === */
+.createPostCard {
+    width: 95%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: #fffdfa;
+    border-radius: 12px;
+    border: 1.8px solid #8a3a04;
+    box-shadow: 0 0 20px rgba(101, 54, 6, 0.18);
+    transition: box-shadow 0.3s ease;
+}
+
+.createPostCard:hover {
+    box-shadow: 0 0 30px rgba(101, 54, 6, 0.3);
+}
+
+.createPostHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.userAvatar {
+    background-color: #7e4b2f;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.postInput {
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 22px;
+    border: 1.8px solid #a17650;
+    background-color: #faf4ec;
+    outline: none;
+    text-align: left;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.postInput::placeholder {
+    color: #7c5e38;
+}
+
+.postInput:focus {
+    border-color: #7a4604;
+    background-color: #fff8e7;
+}
+
+.postOptions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 600;
+    color: #7a4604;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.option:hover {
+    color: #4a2a00;
+    transform: scale(1.05);
+}
+
+/* === FEEDS SECTION === */
+.postsGrid {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media screen and (max-width: 768px) {
+    .middleContainer {
+        padding: 1rem 0.5rem;
+    }
+
+    .stories {
+        padding: 0 1rem;
+    }
+
+    .createPostCard {
+        padding: 0.8rem;
+    }
+
+    .postInput {
+        font-size: 0.9rem;
+    }
+
+    .option {
+        font-size: 0.85rem;
+    }
+}

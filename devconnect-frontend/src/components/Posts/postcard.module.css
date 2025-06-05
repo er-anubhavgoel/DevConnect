@@ -1,0 +1,196 @@
+.postCard {
+    width: 95%;
+    /* min-width: 10rem; */
+    height: 95%;
+    margin: 0.4rem auto;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(138, 54, 0, 0.1);
+    border: 1px solid #d66b1c;
+    transition: transform 0.25s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.postCard:hover {
+    box-shadow: 0 8px 18px rgba(120, 45, 0, 0.18);
+    transform: translateY(-2px);
+}
+
+/* Header */
+.postCardHeader {
+    flex-shrink: 0;
+}
+
+.postCardHeaderTitle {
+    color: #7a3500;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.postCardHeaderSubheader {
+    color: #b65e1a;
+    font-size: 0.7rem;
+    margin-top: -0.1rem;
+}
+
+/* Content */
+.postCardContent {
+    margin-top: 0.25rem;
+    color: #5f2a06;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Image wrapper: flex container for image */
+.imageWrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+}
+
+/* Image - contained, centered */
+.imageWrapperImg {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+.cardActions {
+    padding: 0.3rem 0 0.1rem 0;
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+/* Icons */
+.cardFooterIcon {
+    color: #a2450e;
+    font-size: 1.3rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.cardFooterIcon:hover {
+    color: #802d00;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .postCard {
+        padding: 0.3rem 0.4rem;
+        border-radius: 8px;
+    }
+
+    .postCardContent {
+        font-size: 0.75rem;
+        line-height: 1.25;
+    }
+
+    .cardFooterIcon {
+        font-size: 1.1rem;
+    }
+}
+
+/* Comment Section */
+.commentSection {
+    padding: 0.4rem 0.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(214, 107, 28, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.commentInputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 0.3rem;
+    /* extra spacing below input */
+}
+
+.commentInput {
+    flex: 1;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    border: 1px solid #d66b1c;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffdf9;
+    transition: box-shadow 0.2s ease;
+}
+
+.commentInput:focus {
+    box-shadow: 0 0 5px rgba(214, 107, 28, 0.5);
+}
+
+/* Avatar in comment section */
+.commentSectionAvatar {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+}
+
+/* Comments list container */
+.commentsList {
+    margin-top: 0.25rem;
+}
+
+/* Each comment */
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 8px;
+    background-color: #fff7ee;
+    transition: background-color 0.15s ease;
+}
+
+.comment:hover {
+    background-color: #ffe9cc;
+    cursor: default;
+}
+
+/* Text inside comment */
+.commentText {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #5f2a06;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-break: break-word;
+}

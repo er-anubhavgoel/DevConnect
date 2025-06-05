@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff0e6; /* soft light text */
+    /* background-color: black; */
+}
+
+/* Top bar containing the heading and "View All" link */
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.topBar:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.topBar p {
+    margin: 0;
+    color: #ffe8dc;
+}
+
+.topBar p:first-child {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.topBar p:last-child {
+    font-size: 0.9rem;
+    color: #ffb88c;
+    cursor: pointer;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.topBar p:last-child:hover {
+    color: #ffa36e;
+    font-weight: 600;
+}
+
+/* List of suggestion cards */
+.cardsWrapper {
+    display: flex;
+    flex-direction: column;
+}

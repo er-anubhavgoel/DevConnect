@@ -1,0 +1,37 @@
+.card {
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.title {
+    font-weight: 600;
+    color: #ffe8dc;
+}
+
+.subheader {
+    font-size: 0.85rem;
+    color: #f2c2b0;
+}
+
+.followButton {
+    font-size: 0.85rem;
+    /* background-color: #ffb88c; */
+    color: #4b2c1d;
+    text-transform: none;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+/* 
+.followButton:hover {
+    background-color: #ffa36e;
+} */
