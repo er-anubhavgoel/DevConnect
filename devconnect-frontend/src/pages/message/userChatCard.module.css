@@ -1,0 +1,30 @@
+.card {
+    color: #fff5e6;
+    border: #2f241e 1px solid;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #4a3427;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.cardHeader {
+    padding: 0.5rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffe9cc;
+}
+
+.subheader {
+    font-size: 0.75rem;
+    color: #e0c3a0;
+}

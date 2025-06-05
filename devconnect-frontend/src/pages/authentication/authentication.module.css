@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#authenticationPage {
+    background-color: rgba(252, 227, 217, 0.312);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.bgContainer {
+    height: 100%;
+    width: 60%;
+    background-image: url("https://cdn.pixabay.com/photo/2022/06/23/01/13/social-media-7278965_1280.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.formContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.formContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+#quote{
+    margin-top: -1.7rem;
+    width: 115%;
+}
+
+.formContainer>article {
+    height: 95%;
+    width: 95%;
+    background: linear-gradient(135deg, rgb(96, 52, 7), rgba(161, 69, 26, 0.9));
+    border: 2px solid rgba(85, 40, 8, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(24, 12, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.formContainer>article>#logoSpan {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.formContainer>article>#logoSpan>img {
+    width: 60%;
+    object-fit: contain;
+}
+
+.formContainer>article>#logoSpan>article {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f9dddd;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.formContainer>article>#renderSpan {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #authenticationPage {
+        flex-direction: column;
+    }
+
+    .bgContainer {
+        display: none;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .formContainer>article {
+        width: 100%;
+        /* Full width for article */
+        height: auto;
+    }
+
+    .formContainer>article>#logoSpan {
+        height: auto;
+    }
+
+    .formContainer>article>#renderSpan {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        padding: 15px;
+    }
+
+    .formContainer>article {
+        padding: 10px;
+    }
+
+    .formContainer>article>#logoSpan {
+        height: auto;
+    }
+
+    .formContainer>article>#renderSpan {
+        height: auto;
+    }
+}

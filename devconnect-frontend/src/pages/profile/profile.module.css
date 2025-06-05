@@ -1,0 +1,168 @@
+.profileContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coverPhotoContainer {
+    height: 30vh;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    background-color: rgba(252, 227, 217, 0.312);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverImage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.profilePhotoContainer {
+    height: 30vh;
+    width: 80%;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileImage {
+    height: 30vh !important;
+    width: 30vh !important;
+    border: 2px solid brown;
+    border-radius: 50% !important;
+    margin-left: 10px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.editButton {
+    background-color: rgb(252, 232, 205) !important;
+    color: brown !important;
+    border: 1px solid brown !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.editButton:hover {
+    background-color: rgb(255, 218, 180) !important;
+    box-shadow: 0 0 10px rgba(165, 42, 42, 0.2);
+}
+
+.profileDetailsContainer {
+    height: 10vh;
+    width: 80%;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1rem;
+    color: rgb(62, 14, 14);
+    font-weight: 600;
+}
+
+.profileDetailsContainer>article>h1 {
+    font-size: 1.5rem;
+}
+
+.bioContainer {
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50px);
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    text-align: justify;
+    color: rgb(62, 14, 14);
+    /* background-color: #fff; */
+}
+
+.tabsContainer {
+    width: 80%;
+    transform: translateY(-60px);
+    padding: 1rem;
+    margin-bottom: -2rem;
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tab {
+    color: brown !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.5rem !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.tab:hover {
+    background-color: rgba(165, 42, 42, 0.1) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(165, 42, 42, 0.1);
+}
+
+.Mui-selected {
+    background-color: rgba(165, 42, 42, 0.15) !important;
+    color: brown !important;
+    font-weight: 750 !important;
+    box-shadow: 0 0 10px rgba(165, 42, 42, 0.3);
+}
+
+.tabsValueContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profilePostsContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+}
+
+.postCardWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.reelCardWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.profileReelsContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}

@@ -1,0 +1,164 @@
+.registerForm {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.inputField {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgba(139, 69, 19, 0.6);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #402626;
+    background-color: #f5f0e6;
+    transition: border-color 0.3s;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.inputField:focus {
+    border-color: #8b4513;
+    outline: none;
+}
+
+.errorText {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    background-color: #874719;
+    color: rgb(247, 220, 186);
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px burlywood solid;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #b96927;
+    transform: translateY(-2px);
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(255, 191, 142);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+    color: rgb(255, 234, 225);
+    accent-color: brown;
+}
+
+.radioLabel {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.errorText {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .registerForm {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+
+    .inputGroup {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .inputField {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .submitButton {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .errorText {
+        font-size: 0.85rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .bgContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .registerForm {
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    .inputGroup {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .inputField {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .submitButton {
+        font-size: 0.9rem;
+        padding: 9px 16px;
+        width: 100%;
+    }
+
+    .errorText {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .bgContainer {
+        display: none;
+    }
+}
