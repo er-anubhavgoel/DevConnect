@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './sidebar.module.css'
-import { navigationMenu } from './SideBarNavigation'
+import { navigationMenu } from './SidebarNavigation'
 import { Avatar, Button, Menu, MenuItem } from '@mui/material'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useSelector } from 'react-redux';
