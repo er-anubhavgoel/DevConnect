@@ -7,7 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SocialMediaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocialMediaApplication.class, args);
+		try {
+			SpringApplication.run(SocialMediaApplication.class, args);
+		} catch (Throwable t) {
+			t.printStackTrace();
+			throw t;
+		}
 	}
 
 }
