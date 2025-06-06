@@ -1,6 +1,6 @@
 /* Sidebar container styles */
 .sidebarContainer {
-    width: 250px;
+    width: 300px;
     height: 82vh;
     display: flex;
     flex-direction: column;

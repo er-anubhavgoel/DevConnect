@@ -79,7 +79,13 @@ const Message = () => {
     const [stompClient, setStompClient] = useState(null);
 
     useEffect(() => {
-        const sock = new SockJS("http://localhost:5454/ws");
+        const WS_BASE_URL =
+            process.env.NODE_ENV === "production"
+                ? "https://devconnect-production-a44a.up.railway.app/ws"
+                : "http://localhost:5454/ws";
+
+        const sock = new SockJS(WS_BASE_URL);
+
         const stomp = Stomp.over(sock);
         stomp.debug = () => { };
         setStompClient(stomp);
