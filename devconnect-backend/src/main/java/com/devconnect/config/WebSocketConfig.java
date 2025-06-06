@@ -12,7 +12,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
-		registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();
+		registry.addEndpoint("/ws").setAllowedOrigins("https://dev-connect-beige.vercel.app") // ✅ Use only your
+																								// frontend origin here
+				.withSockJS();
 	}
 
 	@Override
@@ -21,5 +23,4 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 		registry.enableSimpleBroker("/group", "/user", "/chat");
 		registry.setUserDestinationPrefix("/user");
 	}
-
 }
