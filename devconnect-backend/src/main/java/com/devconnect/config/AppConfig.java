@@ -1,6 +1,6 @@
 package com.devconnect.config;
 
-import java.util.Arrays; 
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.springframework.context.annotation.Bean;
@@ -40,7 +40,8 @@ public class AppConfig {
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration configuration = new CorsConfiguration();
-				configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173"));
+				configuration.setAllowedOrigins(
+						Arrays.asList("http://localhost:5173", "https://dev-connect-beige.vercel.app/"));
 				configuration.setAllowedMethods(Collections.singletonList("*"));
 				configuration.setAllowCredentials(true);
 				configuration.setAllowedHeaders(Collections.singletonList("*"));
