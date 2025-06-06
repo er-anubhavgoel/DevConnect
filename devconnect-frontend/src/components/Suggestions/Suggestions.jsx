@@ -1,6 +1,6 @@
 import styles from './suggestions.module.css'
 import SearchUser from '../SearchUser/SearchUser'
-import PopularUserCard from './PopularUserCard'
+import PopularUserCard from './PopularuserCard'
 
 const popularUser = [11, 1, 1, 1, 1]
 
