@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import { Avatar, IconButton, TextField, Typography } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
-import styles from './ProfileModal.module.css';
+import styles from './profileModal.module.css';
 import { updateProfileAction } from '../../Redux/Auth/auth.action';
 import { useState } from 'react';
 
