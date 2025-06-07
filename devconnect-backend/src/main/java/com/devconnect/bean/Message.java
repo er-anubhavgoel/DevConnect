@@ -1,6 +1,6 @@
 package com.devconnect.bean;
 
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -34,5 +34,5 @@ public class Message {
 	@JsonIgnore
 	private Chat chat;
 
-	private LocalDateTime timestamp;
+	private ZonedDateTime timestamp;
 }

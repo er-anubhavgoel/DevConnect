@@ -7,10 +7,6 @@ const ChatMessage = ({ message, currentUser }) => {
     const isOwnMessage = message.user?.userId === currentUser?.userId;
     console.log(message.timestamp)
 
-    // const formatTimestamp = (timestamp) => {
-    //     const date = new Date(timestamp);
-    //     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    // };
 
     const formatTimestamp = (timestamp) => {
         const date = new Date(timestamp);

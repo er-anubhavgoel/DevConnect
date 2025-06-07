@@ -1,6 +1,7 @@
 package com.devconnect.service;
 
-import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,8 @@ public class MessageServiceImpl implements MessageService {
 		message.setContent(req.getContent());
 		message.setImage(req.getImage());
 		message.setUser(user);
-		message.setTimestamp(LocalDateTime.now());
+//		message.setTimestamp(LocalDateTime.now());
+		message.setTimestamp(ZonedDateTime.now(ZoneId.of("Asia/Kolkata")));
 
 		Message savedMessage = messageRepository.save(message);
 		chat.getMessages().add(savedMessage);
