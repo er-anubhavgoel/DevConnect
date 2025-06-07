@@ -14,7 +14,7 @@ const ChatMessage = ({ message, currentUser }) => {
 
     const formatTimestamp = (timestamp) => {
         const date = new Date(timestamp);
-        return date.toLocaleString('en-US', {
+        return date.toLocaleString('en-IN', {
             year: 'numeric',
             month: 'short',
             day: 'numeric',
@@ -52,7 +52,6 @@ const ChatMessage = ({ message, currentUser }) => {
                 {message.content && (
                     <div className={styles.messageText}>
                         <p>{message.content}</p>
-                        {/* <footer>{message.timestamp}</footer> */}
                         <footer className={styles.messageTimestamp}>{formatTimestamp(message.timestamp)}</footer>
 
                     </div>
