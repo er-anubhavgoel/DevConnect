@@ -35,7 +35,6 @@ public class MessageServiceImpl implements MessageService {
 		message.setContent(req.getContent());
 		message.setImage(req.getImage());
 		message.setUser(user);
-//		message.setTimestamp(LocalDateTime.now());
 		message.setTimestamp(ZonedDateTime.now(ZoneId.of("Asia/Kolkata")));
 
 		Message savedMessage = messageRepository.save(message);

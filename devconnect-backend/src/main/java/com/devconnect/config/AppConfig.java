@@ -41,7 +41,7 @@ public class AppConfig {
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration configuration = new CorsConfiguration();
 				configuration.setAllowedOrigins(
-						Arrays.asList("http://localhost:5173", "https://dev-connect-beige.vercel.app/"));
+						Arrays.asList("http://localhost:5173", "https://dev-connect-beige.vercel.app"));
 				configuration.setAllowedMethods(Collections.singletonList("*"));
 				configuration.setAllowCredentials(true);
 				configuration.setAllowedHeaders(Collections.singletonList("*"));
